@@ -16,11 +16,24 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
+
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <plugin name="cordova-plugin-customurlscheme" spec="~4.2.0">
+        <variable name="URL_SCHEME" value="blog.topherpedersen.auth0cordovademo" />
+        <variable name="ANDROID_SCHEME" value="blog.topherpedersen.auth0cordovademo" />
+        <variable name="ANDROID_HOST" value="topherpedersen.auth0.com" />
+        <variable name="ANDROID_PATHPREFIX" value="/cordova/blog.topherpedersen.auth0cordovademo/callback" />
+    </plugin>
+    <plugin name="cordova-plugin-safariviewcontroller" spec="~1.4.6" />
+
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
 </widget>

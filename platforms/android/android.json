@@ -32,6 +32,16 @@
             }
           ]
         }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"SafariViewController\"><param name=\"android-package\" value=\"com.customtabplugin.ChromeCustomTabPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
@@ -45,6 +55,9 @@
       "ANDROID_HOST": "topherpedersen.auth0.com",
       "ANDROID_PATHPREFIX": "/cordova/com.auth0.cordova.example/callback",
       "PACKAGE_NAME": "blog.topherpedersen.auth0cordovademo"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "blog.topherpedersen.auth0cordovademo"
     }
   },
   "dependent_plugins": {},
@@ -56,10 +69,19 @@
       "clobbers": [
         "window.plugins.launchmyapp"
       ]
+    },
+    {
+      "id": "cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-customurlscheme": "4.4.0"
+    "cordova-plugin-customurlscheme": "4.4.0",
+    "cordova-plugin-safariviewcontroller": "1.6.0"
   }
 }

@@ -7,10 +7,19 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.plugins.launchmyapp"
       ]
+    },
+    {
+      "id": "cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-customurlscheme": "4.4.0"
+    "cordova-plugin-customurlscheme": "4.4.0",
+    "cordova-plugin-safariviewcontroller": "1.6.0"
   };
 });

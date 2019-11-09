@@ -16,6 +16,9 @@
       "ANDROID_HOST": "topherpedersen.auth0.com",
       "ANDROID_PATHPREFIX": "/cordova/com.auth0.cordova.example/callback",
       "PACKAGE_NAME": "blog.topherpedersen.auth0cordovademo"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "blog.topherpedersen.auth0cordovademo"
     }
   },
   "dependent_plugins": {}

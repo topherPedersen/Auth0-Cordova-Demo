@@ -6,5 +6,18 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-customurlscheme": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-customurlscheme"
+    },
+    "is_top_level": true,
+    "variables": {
+      "URL_SCHEME": "com.auth0.cordova.example",
+      "ANDROID_SCHEME": "com.auth0.cordova.example",
+      "ANDROID_HOST": "topherpedersen.auth0.com",
+      "ANDROID_PATHPREFIX": "/cordova/com.auth0.cordova.example/callback"
+    }
   }
 }

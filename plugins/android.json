@@ -9,6 +9,13 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "com.auth0.cordova.example",
+      "ANDROID_SCHEME": "com.auth0.cordova.example",
+      "ANDROID_HOST": "topherpedersen.auth0.com",
+      "ANDROID_PATHPREFIX": "/cordova/com.auth0.cordova.example/callback",
+      "PACKAGE_NAME": "blog.topherpedersen.auth0cordovademo"
     }
   },
   "dependent_plugins": {}
